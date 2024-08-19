@@ -14,116 +14,162 @@
                 "fields": [
                     {
                         "name": "Date",
+                        "long_name": "Date",
+                        "nombre_largo": "Date",
                         "type": "string",
                         "format": "default"
                     },
                     {
                         "name": "Name",
+                        "long_name": "Name",
+                        "nombre_largo": "Name",
                         "type": "string",
                         "format": "default"
                     },
                     {
                         "name": "Type",
+                        "long_name": "Type",
+                        "nombre_largo": "Type",
                         "type": "string",
                         "format": "default"
                     },
                     {
                         "name": "Position Name",
+                        "long_name": "Position Name",
+                        "nombre_largo": "Position Name",
                         "type": "string",
                         "format": "default"
                     },
                     {
                         "name": "Total Duration",
+                        "long_name": "Total Duration",
+                        "nombre_largo": "Total Duration",
                         "type": "number",
                         "format": "default"
                     },
                     {
                         "name": "Total Distance (m)",
+                        "long_name": "Total Distance (m)",
+                        "nombre_largo": "Total Distance (m)",
                         "type": "integer",
                         "format": "default"
                     },
                     {
                         "name": "Total Player Load",
+                        "long_name": "Total Player Load",
+                        "nombre_largo": "Total Player Load",
                         "type": "integer",
                         "format": "default"
                     },
                     {
                         "name": "High speed distance (m)",
+                        "long_name": "High speed distance (m)",
+                        "nombre_largo": "High speed distance (m)",
                         "type": "integer",
                         "format": "default"
                     },
                     {
                         "name": "High speed efforts",
+                        "long_name": "High speed efforts",
+                        "nombre_largo": "High speed efforts",
                         "type": "integer",
                         "format": "default"
                     },
                     {
                         "name": "Sprint distance (m)",
+                        "long_name": "Sprint distance (m)",
+                        "nombre_largo": "Sprint distance (m)",
                         "type": "integer",
                         "format": "default"
                     },
                     {
                         "name": "Sprints efforts",
+                        "long_name": "Sprints efforts",
+                        "nombre_largo": "Sprints efforts",
                         "type": "integer",
                         "format": "default"
                     },
                     {
                         "name": "Maximum Velocity (km/h)",
+                        "long_name": "Maximum Velocity (km/h)",
+                        "nombre_largo": "Maximum Velocity (km/h)",
                         "type": "number",
                         "format": "default"
                     },
                     {
                         "name": "Max Acceleration",
+                        "long_name": "Max Acceleration",
+                        "nombre_largo": "Max Acceleration",
                         "type": "number",
                         "format": "default"
                     },
                     {
                         "name": "Max Deceleration",
+                        "long_name": "Max Deceleration",
+                        "nombre_largo": "Max Deceleration",
                         "type": "number",
                         "format": "default"
                     },
                     {
                         "name": "Acceleration B1 Efforts (Gen 2)",
+                        "long_name": "Acceleration B1 Efforts (Gen 2)",
+                        "nombre_largo": "Acceleration B1 Efforts (Gen 2)",
                         "type": "integer",
                         "format": "default"
                     },
                     {
                         "name": "Acceleration B2 Efforts (Gen 2)",
+                        "long_name": "Acceleration B2 Efforts (Gen 2)",
+                        "nombre_largo": "Acceleration B2 Efforts (Gen 2)",
                         "type": "integer",
                         "format": "default"
                     },
                     {
                         "name": "Acceleration B3 Efforts (Gen 2)",
+                        "long_name": "Acceleration B3 Efforts (Gen 2)",
+                        "nombre_largo": "Acceleration B3 Efforts (Gen 2)",
                         "type": "integer",
                         "format": "default"
                     },
                     {
                         "name": "Acceleration B1-3 Total Efforts (Gen 2)",
+                        "long_name": "Acceleration B1-3 Total Efforts (Gen 2)",
+                        "nombre_largo": "Acceleration B1-3 Total Efforts (Gen 2)",
                         "type": "integer",
                         "format": "default"
                     },
                     {
                         "name": "Deceleration B1 Efforts (Gen 2)",
+                        "long_name": "Deceleration B1 Efforts (Gen 2)",
+                        "nombre_largo": "Deceleration B1 Efforts (Gen 2)",
                         "type": "integer",
                         "format": "default"
                     },
                     {
                         "name": "Deceleration B2 Efforts (Gen 2)",
+                        "long_name": "Deceleration B2 Efforts (Gen 2)",
+                        "nombre_largo": "Deceleration B2 Efforts (Gen 2)",
                         "type": "integer",
                         "format": "default"
                     },
                     {
                         "name": "Deceleration B3 Efforts (Gen 2)",
+                        "long_name": "Deceleration B3 Efforts (Gen 2)",
+                        "nombre_largo": "Deceleration B3 Efforts (Gen 2)",
                         "type": "integer",
                         "format": "default"
                     },
                     {
                         "name": "Deceleration B1-3 Total Efforts (Gen 2)",
+                        "long_name": "Deceleration B1-3 Total Efforts (Gen 2)",
+                        "nombre_largo": "Deceleration B1-3 Total Efforts (Gen 2)",
                         "type": "integer",
                         "format": "default"
                     },
                     {
                         "name": "Player Peak Velocity",
+                        "long_name": "Player Peak Velocity",
+                        "nombre_largo": "Player Peak Velocity",
                         "type": "number",
                         "format": "default"
                     }
