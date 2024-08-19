@@ -20,23 +20,23 @@
                         "format": "default"
                     },
                     {
-                        "name": "Name",
+                        "name": "name",
                         "long_name": "Name",
-                        "nombre_largo": "Name",
+                        "nombre_largo": "Nombre",
                         "type": "string",
                         "format": "default"
                     },
                     {
-                        "name": "Type",
+                        "name": "type",
                         "long_name": "Type",
-                        "nombre_largo": "Type",
+                        "nombre_largo": "Tipo",
                         "type": "string",
                         "format": "default"
                     },
                     {
-                        "name": "Position Name",
+                        "name": "position_name",
                         "long_name": "Position Name",
-                        "nombre_largo": "Position Name",
+                        "nombre_largo": "Nombre posición",
                         "type": "string",
                         "format": "default"
                     },
