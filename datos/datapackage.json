@@ -13,9 +13,9 @@
             "schema": {
                 "fields": [
                     {
-                        "name": "Date",
+                        "name": "date",
                         "long_name": "Date",
-                        "nombre_largo": "Date",
+                        "nombre_largo": "Fecha",
                         "type": "string",
                         "format": "default"
                     },
