@@ -1,0 +1,137 @@
+{
+    "name": "change-me",
+    "schema": "tabular-data-package",
+    "profile": "tabular-data-package",
+    "resources": [
+        {
+            "path": "actividad_1.csv",
+            "profile": "tabular-data-resource",
+            "name": "actividad_1",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "Date",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Type",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Position Name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Total Duration",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Total Distance (m)",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Total Player Load",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "High speed distance (m)",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "High speed efforts",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Sprint distance (m)",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Sprints efforts",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Maximum Velocity (km/h)",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Max Acceleration",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Max Deceleration",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Acceleration B1 Efforts (Gen 2)",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Acceleration B2 Efforts (Gen 2)",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Acceleration B3 Efforts (Gen 2)",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Acceleration B1-3 Total Efforts (Gen 2)",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Deceleration B1 Efforts (Gen 2)",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Deceleration B2 Efforts (Gen 2)",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Deceleration B3 Efforts (Gen 2)",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Deceleration B1-3 Total Efforts (Gen 2)",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Player Peak Velocity",
+                        "type": "number",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            }
+        }
+    ]
+}
