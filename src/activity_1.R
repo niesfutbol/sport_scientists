@@ -32,4 +32,5 @@ new_speed <- cleaned_speed |>
     percentage_max_speed = `Maximum Velocity (km/h)`*100/`Player Peak Velocity`,
     high_intensity_acceleration = `Acceleration B2 Efforts (Gen 2)` + `Acceleration B3 Efforts (Gen 2)`
   ) |>
-  select(c(mean_speed, percentage_max_speed, high_intensity_acceleration))
+  select(c(mean_speed, percentage_max_speed, high_intensity_acceleration)) |>
+  summary()
