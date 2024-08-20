@@ -182,6 +182,67 @@
                     ""
                 ]
             }
+        },
+        {
+            "path": "actividad_2_fp.csv",
+            "profile": "tabular-data-resource",
+            "name": "actividad_2_fp",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "player_id",
+                        "long_name": "Player Id",
+                        "nombre_largo": "Identificador del jugador",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "position",
+                        "long_name": "Player Id",
+                        "nombre_largo": "Identificador del jugador",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "test_date",
+                        "long_name": "Test date",
+                        "nombre_largo": "fecha de la prueba",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "concentric_peak_force",
+                        "long_name": "Player Id",
+                        "nombre_largo": "Identificador del jugador",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "concentric_mean_power_bm",
+                        "long_name": "Player Id",
+                        "nombre_largo": "Identificador del jugador",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "countermovement_depth",
+                        "long_name": "Player Id",
+                        "nombre_largo": "Identificador del jugador",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "rsi_modified",
+                        "long_name": "Player Id",
+                        "nombre_largo": "Identificador del jugador",
+                        "type": "number",
+                        "format": "default"
+                    }
+                ]
+            }
         }
     ]
 }

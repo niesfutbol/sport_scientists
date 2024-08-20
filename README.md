@@ -5,7 +5,7 @@ src="https://github.com/nepito/world_cup_semis/blob/develop/img/logo.jpeg" align
 # Sport Scientists
 [![codecov](https://codecov.io/gh/niesfutbol/sofa_score_data/graph/badge.svg?token=vRIPoR2OZA)](https://codecov.io/gh/niesfutbol/sofa_score_data)
 
-## Step to use
+## Introducción a la Programación en R para Análisis de Datos Físicos
 
 ### Activity 1
 
@@ -20,4 +20,13 @@ src="https://github.com/nepito/world_cup_semis/blob/develop/img/logo.jpeg" align
     - % de máxima velocidad alcanzada (relación entre la velocidad máxima de la sesión y la del
      perfil del jugador).
     - Aceleraciones de B2-B3 para contemplar aceleraciones de alta intensidad.
-1. Seleccione únicamente las columnas creadas y adjunte una captura con el resumen numérico de cada una de ellas utilizando la función summary().
+1. Seleccione únicamente las columnas creadas y adjunte una captura con el resumen numérico de cada
+   una de ellas utilizando la función summary().
+
+### Activity 2
+
+1. Importe el archivo de datos (indique el directorio de trabajo en RStuido, y utilice la función read.csv() para importar los datos).
+1. Utilice un gráfico que permita explorar la relación entre las variables “concentric_mean_power_bm” y “countermovement_depth”. Adjunte la captura de pantalla.
+1. Filtre los datos del Jugador 4317 y utilice un gráfico que permita ver la tendencia de los valores de “rsi_modified”. Adjunte la captura de pantalla.
+1. Filtre el día 2021-02-26 y con la variable “concentric_peak_force” utilice una visualización que haga un ranking de mayor a menor de los jugadores. Coloreando de distinto color al resto al Jugador 2993. Adjunte la captura de pantalla.
+1. Repita el mismo gráfico que en el punto 4 pero en este caso haga servir múltiples paneles, uno por cada posición. Adjunte la captura de pantalla.
