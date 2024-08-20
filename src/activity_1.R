@@ -23,10 +23,8 @@ max_speed <- cleaned_speed |>
 
 print(max_speed)
 
-max_speed <- cleaned_speed |>
-  filter(`Maximum Velocity (km/h)` > 40) |>
-  arrange(`Maximum Velocity (km/h)`) |>
-  print()
+cleaned_speed <- cleaned_speed |>
+  filter(`Maximum Velocity (km/h)` < 40)
 
 new_speed <- cleaned_speed |>
   mutate(
