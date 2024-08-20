@@ -41,45 +41,49 @@
                         "format": "default"
                     },
                     {
-                        "name": "Total Duration",
+                        "name": "total_duration",
                         "long_name": "Total Duration",
-                        "nombre_largo": "Total Duration",
+                        "nombre_largo": "Duration total",
                         "type": "number",
+                        "unit": "min",
                         "format": "default"
                     },
                     {
-                        "name": "Total Distance (m)",
-                        "long_name": "Total Distance (m)",
-                        "nombre_largo": "Total Distance (m)",
+                        "name": "total_distance",
+                        "long_name": "Total Distance",
+                        "nombre_largo": "Distancia total",
                         "type": "integer",
+                        "unit": "m",
                         "format": "default"
                     },
                     {
-                        "name": "Total Player Load",
+                        "name": "total_player_load",
                         "long_name": "Total Player Load",
-                        "nombre_largo": "Total Player Load",
+                        "nombre_largo": "Carga total del jugador",
                         "type": "integer",
                         "format": "default"
                     },
                     {
-                        "name": "High speed distance (m)",
-                        "long_name": "High speed distance (m)",
-                        "nombre_largo": "High speed distance (m)",
+                        "name": "high_speed_distance",
+                        "long_name": "High speed distance",
+                        "nombre_largo": "Distancia a alta velocidad",
                         "type": "integer",
+                        "unit": "m",
                         "format": "default"
                     },
                     {
-                        "name": "High speed efforts",
+                        "name": "high_speed_efforts",
                         "long_name": "High speed efforts",
-                        "nombre_largo": "High speed efforts",
+                        "nombre_largo": "Esfuerzo a alta velocidad",
                         "type": "integer",
                         "format": "default"
                     },
                     {
-                        "name": "Sprint distance (m)",
-                        "long_name": "Sprint distance (m)",
-                        "nombre_largo": "Sprint distance (m)",
+                        "name": "sprint_distance",
+                        "long_name": "Sprint distance",
+                        "nombre_largo": "Distancia del sprint",
                         "type": "integer",
+                        "unit": "m",
                         "format": "default"
                     },
                     {
