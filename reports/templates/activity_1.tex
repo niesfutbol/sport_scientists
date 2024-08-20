@@ -80,4 +80,15 @@ new_speed <- cleaned_speed |>
     high_intensity_acceleration = `Acceleration B2 Efforts (Gen 2)` + `Acceleration B3 Efforts (Gen 2)`
   )
 \end{verbatim}
+La figura \ref{fig:numericSummary} es una captura de pantalla del resumen numérico de las variables
+que calculamos arriba. Vale la pena notar que las unidades de la velocidad promedio es m/min. Así la
+rapidez promedio máxima de 91.5 m/min es equivalente a 5.49 km/h.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{../static/activity_1_8.png}
+\caption{Captura de pantalla con el resumen numérico de las variables rapidez promedio (m/min),
+porcentaje de velocidad máxima y (número de) aceleraciones de alta intensidad. La información la
+obtuvimos a partir de la función \texttt{summary()}.}
+\label{fig:numericSummary}
+\end{figure}
 \end{document}

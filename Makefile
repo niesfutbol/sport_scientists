@@ -1,11 +1,11 @@
 all:
 
-reports/dummy_report.pdf: reports/dummy_report.tex
+reports/activity_1.pdf: reports/activity_1.tex
 	$(renderLatex)
 
-reports/dummy_report.tex: reports/non-tabular/results.json
+reports/activity_1.tex: reports/non-tabular/results.json
 	jinja-render \
-	--report-name "dummy_report" \
+	--report-name "activity_1" \
 	--summary-path "reports/non-tabular/results.json"
 
 reports/non-tabular/results.json:
