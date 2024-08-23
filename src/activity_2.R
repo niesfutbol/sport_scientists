@@ -28,4 +28,13 @@ jumps |> filter(player_id == 4317) |> crear_grafico_serie_tiempo()
 ggsave("results/step3.png")
 
 # Paso 4
-jumps |> filter(test_date == 2021-02-26)
+p <- jumps |>
+  filter(test_date == "2021-02-26") |>
+  mutate(estudio = case_when(player_id == 2993 ~ "1", TRUE ~ "2")) |>
+  ggplot(aes(reorder(as.factor(player_id), -concentric_peak_force), concentric_peak_force)) +
+  geom_col(aes(fill=estudio)) +
+  labs(y = "El pico de la fuerza concentríca", x = "Jugadores")
+ggsave("results/step4.png")
+
+p + facet_wrap(~position, scales = "free")
+ggsave("results/step5.png")
