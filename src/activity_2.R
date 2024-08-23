@@ -33,7 +33,7 @@ p <- jumps |>
   mutate(estudio = case_when(player_id == 2993 ~ "1", TRUE ~ "2")) |>
   ggplot(aes(reorder(as.factor(player_id), -concentric_peak_force), concentric_peak_force)) +
   geom_col(aes(fill=estudio)) +
-  labs(y = "El pico de la fuerza concentríca", x = "Jugadores")
+  labs(y = "Fuerza máxima alcanzada durante la fase concéntrica", x = "Jugadores")
 ggsave("results/step4.png")
 
 p + facet_wrap(~position, scales = "free")
