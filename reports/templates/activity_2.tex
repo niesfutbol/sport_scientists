@@ -10,85 +10,49 @@
 \maketitle
 
 El código con el que generamos los resultados de este reporte lo encontrarás
-\href{https://github.com/niesfutbol/sport_scientists/blob/develop/src/activity_1.R}{sport\_scientists/src/activity\_1.R}.
+\href{https://github.com/niesfutbol/sport_scientists/blob/develop/src/activity_2.R}{sport\_scientists/src/activity\_2.R}.
 El código podría diferir del presente en este reporte. La versión actualizada del código está en la
 liga al repositorio.
 
-En la figura \ref{fig:genralStructure} vemos la estuctura general de la base de datos. La base de 
-datos tiene 23 renglones y 23 columnas. En el recuadro rojo vertical podemos ver los tipos de
-variables. Las primeras cuatro columnas son cadenas de caracteres y el resto son números.
-\begin{figure}[H]
-    \centering
-\includegraphics[scale=0.6]{../static/activity_1_2.png}
-\caption{Captura de pantalla con la estructura general de la bases de datos. Información obtenida a 
-partir de la función \texttt{glimpse()}.}
-\label{fig:genralStructure}
-\end{figure}
-
-Al explorar los datos notamos que el jugador \textbf{Grant, Joshua} no tiene datos, su duración es
-0. Así que lo retiramos de la base de datos:
-\begin{verbatim}
-player_without_info <- speed |>
-  filter(total_duration == 0) |>
-  pull(name)
-
-cleaned_speed <- speed |>
-  filter(total_duration != 0)
-\end{verbatim}
-
-
-\subsubsection*{Distancia total acumulada por posición}
-En la figura \ref{fig:meanSpeedPosition} vemos distancia total acumulada por encima de 21km/h
-promedio por cada posición. Los registros están acomodados de menor a mayor.
-Vemos que la posición con con menor distancia acumulada \textbf{Media punta} y mayor distancia
-acumulada promedio fue \textbf{Medio centro}.
+\subsubsection*{Relación entre las variables Potencia media concéntrica y la Profundidad del contramovimiento}
+La figura \ref{fig:step2} nos permite explorar la relación entre las variables
+\texttt{concentric\_mean\_power\_bm} y \texttt{countermovement\_depth}.
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.6]{../static/activity_1_5.png}
-\caption{Captura de pantalla con la rapidez promedio por posición. La información la obtuvimos a 
-partir de la función \texttt{summarize()}.}
-\label{fig:meanSpeedPosition}
+\includegraphics[scale=0.6]{../results/step2.png}
+\caption{Relación entre las variables \textbf{Potencia media concéntrica} y la \textbf{Profundidad
+del contramovimiento}.}
+\label{fig:step2}
 \end{figure}
 
-\subsubsection*{Velocidad máxima de los jugadores}
-Revisamos el máximo en la velocidad de los jugadores:
-\begin{verbatim}
-max_speed <- cleaned_speed |>
-  pull(`Maximum Velocity (km/h)`) |>
-  max()
-\end{verbatim}
-El valor que encontramos fue de 85.9 km/h. De la
-\href{https://es.wikipedia.org/wiki/100_metros}{Wiki} sabemos que el record mundial lo tiene Usain
-Bolt con una rapidez de 42 km/h. Asi que tiramos todos los registros por arriba de 40 km/h:
-\begin{verbatim}
-cleaned_speed <- cleaned_speed |>
-  filter(`Maximum Velocity (km/h)` < 40)
-\end{verbatim}
-
-
-\subsubsection*{Rapidez promedio, porcentaje de velocidad máxima y aceleraciones de alta intensidad}
-Calculamos la rapidez promedio de cada jugador como la división de la distancia que recorrió en la
-sesión entre la duración de la sesión. También buscamos el porcentaje de la velocidad máxima
-registrada para cada jugador. Es decir, comparamos la valocidad máxima de referencia de cada jugador
-contra la máxima alcanzada en esta sesión. Por último calculamos, el número de aceleraciones de alta
-intensidad, es decir el número de aceleraciones que fueron mayores a 2 m/$s^2$:
-\begin{verbatim}
-new_speed <- cleaned_speed |>
-  mutate(
-    mean_speed = total_distance / total_duration,
-    percentage_max_speed = `Maximum Velocity (km/h)`*100/`Player Peak Velocity`,
-    high_intensity_acceleration = `Acceleration B2 Efforts (Gen 2)` + `Acceleration B3 Efforts (Gen 2)`
-  )
-\end{verbatim}
-La figura \ref{fig:numericSummary} es una captura de pantalla del resumen numérico de las variables
-que calculamos arriba. Vale la pena notar que las unidades de la velocidad promedio es m/min. Así la
-rapidez promedio máxima de 91.5 m/min es equivalente a 5.49 km/h.
+\subsubsection*{Serie de tiempo del RSI modificado}
+La figura \ref{fig:step3} nos permite ver la tendencia de los valores de \texttt{rsi\_modified}. Los
+los datos con los que generamos la figura corresponden al jugador 4317.
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.6]{../static/activity_1_8.png}
-\caption{Captura de pantalla con el resumen numérico de las variables rapidez promedio (m/min),
-porcentaje de velocidad máxima y (número de) aceleraciones de alta intensidad. La información la
-obtuvimos a partir de la función \texttt{summary()}.}
-\label{fig:numericSummary}
+\includegraphics[scale=0.6]{../results/step3.png}
+\caption{Serie de tiempo del RSI modificado para el jugador 4317.}
+\label{fig:step3}
 \end{figure}
+\subsubsection*{El pico de la fuerza concéntrica}
+La figura \ref{fig:step4} hace un acomodo de los valores para la variable \texttt{concentric\_peak\_force}
+de mayor a menor de los jugadores. El Jugador 2993 está señalado en un color distinto. Los datos
+son del día 2021-02-26.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{../results/step4.png}
+\caption{El pico de la fuerza concéntrica de los jugadores para el día 2021-02-26. El jugador 2993 está resaltado en otro color.}
+\label{fig:step4}
+\end{figure}
+
+La figura \ref{fig:step5} representa la misma información a la figura \ref{fig:step4} pero los datos
+de los jugadores están agrupados por posición.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{../results/step5.png}
+\caption{El pico de la fuerza concéntrica para el día 2021-02-26 para los jugadores de cada posición. El jugador 2993 está resaltado en otro color.}
+\label{fig:step5}
+\end{figure}
+
 \end{document}
