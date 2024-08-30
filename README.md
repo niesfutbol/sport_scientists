@@ -29,4 +29,19 @@ src="https://github.com/nepito/world_cup_semis/blob/develop/img/logo.jpeg" align
 1. Utilice un gráfico que permita explorar la relación entre las variables “concentric_mean_power_bm” y “countermovement_depth”. Adjunte la captura de pantalla.
 1. Filtre los datos del Jugador 4317 y utilice un gráfico que permita ver la tendencia de los valores de “rsi_modified”. Adjunte la captura de pantalla.
 1. Filtre el día 2021-02-26 y con la variable “concentric_peak_force” utilice una visualización que haga un ranking de mayor a menor de los jugadores. Coloreando de distinto color al resto al Jugador 2993. Adjunte la captura de pantalla.
-1. Repita el mismo gráfico que en el punto 4 pero en este caso haga servir múltiples paneles, uno por cada posición. Adjunte la captura de pantalla.
+1. Repita el mismo gráfico que en el punto 4 pero en este caso haga servir múltiples paneles, uno
+   por cada posición. Adjunte la captura de pantalla.
+
+## Análisis Estadístico y la Visualización
+### Activity
+1. Importar ambas bases de datos
+1. Exploración de ambos archivos:
+    - Vista del archivo “Actividad 1 - data_positions_act1_c2” y con el archivo
+    “Actividad 1 - data_gps_act1_c2” filtrar al player_display_name = Pro 12 y visualizar la señal de velocidad en el tiempo.
+1. Con el archivo “Actividad 1 - data_gps_act1_c2”, por cada uno de los jugadores calcular:
+    - la variable velocidad, pero en metros por segundo.
+    - A partir de la señal de velocidad usar el incremento de tiempo para calcular la aceleración en
+      metros por segundo al cuadrado
+    - Finalmente, obtener el valor de la aceleración en valores absolutos.
+1. Por cada jugador, obtener el valor promedio de la velocidad en m/s y de la acceleration density (valor promedio de la aceleración absoluta).
+1. Unir los resultados con la tabla “Actividad 1 - data_positions_act1_c2” para obtener el promedio de los promedios por posición.
