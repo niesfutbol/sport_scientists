@@ -1,5 +1,13 @@
 all:
 
+reports/activity_3.pdf: reports/activity_3.tex
+	$(renderLatex)
+
+reports/activity_3.tex: reports/non-tabular/results.json
+	jinja-render \
+	--report-name "activity_3" \
+	--summary-path "reports/non-tabular/results.json"
+
 reports/activity_2.pdf: reports/activity_2.tex
 	$(renderLatex)
 
