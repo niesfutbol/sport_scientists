@@ -6,6 +6,13 @@ src="https://github.com/nepito/world_cup_semis/blob/develop/img/logo.jpeg" align
 [![codecov](https://codecov.io/gh/niesfutbol/sofa_score_data/graph/badge.svg?token=vRIPoR2OZA)](https://codecov.io/gh/niesfutbol/sofa_score_data)
 
 ## Introducción a la Programación en R para Análisis de Datos Físicos
+To run
+``` bash
+docker-compose up --detach rstudio
+```
+### Rstudio
+- **User**: `rstudio`
+- **PASSWORD**: `yourpassword`
 
 ### Activity 1
 
@@ -33,7 +40,7 @@ src="https://github.com/nepito/world_cup_semis/blob/develop/img/logo.jpeg" align
    por cada posición. Adjunte la captura de pantalla.
 
 ## Análisis Estadístico y la Visualización
-### Activity
+### Activity 1
 1. Importar ambas bases de datos
 1. Exploración de ambos archivos:
     - Vista del archivo “Actividad 1 - data_positions_act1_c2” y con el archivo
@@ -44,4 +51,17 @@ src="https://github.com/nepito/world_cup_semis/blob/develop/img/logo.jpeg" align
       metros por segundo al cuadrado
     - Finalmente, obtener el valor de la aceleración en valores absolutos.
 1. Por cada jugador, obtener el valor promedio de la velocidad en m/s y de la acceleration density (valor promedio de la aceleración absoluta).
-1. Unir los resultados con la tabla “Actividad 1 - data_positions_act1_c2” para obtener el promedio de los promedios por posición.
+1. Unir los resultados con la tabla “Actividad 1 - data_positions_act1_c2” para obtener el promedio
+   de los promedios por posición.
+
+### Activity 2
+Para esta actividad utilizaremos datos obtenidos durante un test de salto (Countermovement Jump) en una plataforma de fuerza. Estos datos están estructurados de la siguiente manera:
+
+1. Columna player_id: Muestra el identificador del jugador
+1. 11 variables restantes: Valores promedio de 5 saltos en el test CMJ, de distintas variables
+   (nombre de la columna) del proveedor de datos.
+
+El objetivo de esta actividad es realizar una exploración de la tabla de datos, mediante la cual pretendemos encontrar correlaciones entre variables.
+
+A partir de la identificación de estas correlaciones, construiremos un modelo lineal que busque estimar la variable `Jump Height (Flight Time)`, utilizando una columna de la tabla de datos como variable dependiente. La variable `Jump Height (Flight Time)` está representada en cm.
+
