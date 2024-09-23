@@ -8,3 +8,11 @@ services:
     command: bash
     volumes:
       - $PWD:/workdir
+  rstudio:
+    image: rocker/verse:4
+    ports:
+      - "8787:8787"
+    environment:
+      PASSWORD: yourpassword
+    volumes:
+      - $PWD:/home/rstudio/workspace
