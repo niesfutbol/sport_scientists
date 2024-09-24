@@ -42,8 +42,14 @@ This is an R Markdown document. Markdown is a simple formatting syntax for autho
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
-```{r cars}
-summary(cars)
+```{r plot}
+plot(data$peak_power_bm, data$jump_height_flight_time, 
+     main = "Jump height flight vs Peak power", 
+     xlab = "Peak power", ylab = "Jump height flight", pch = 20
+     )
+abline(lm(jump_height_flight_time ~ peak_power_bm, data = data), col = "black", lwd = 2)
+points(sort(data$peak_power_bm), linear_model$fitted.values, col = "purple", pch = 20)
+points(sort(data$peak_power_bm), stepwise_model$fitted.values, col = "red")
 ```
 
 ## Including Plots
