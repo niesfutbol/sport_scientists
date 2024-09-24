@@ -9,9 +9,31 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+``` {r libraries}
+library(tidyverse)
+```
+
 ```{r read data}
-path_data <- "workspace/datos/Actividad 2 - c2_data.csv"
-data <- read_csv(path_data, show_col_types = FALSE)
+path_data <- "/home/rstudio/workspace/datos/actividad_2_2.csv"
+data <- read_csv(path_data, show_col_types = FALSE) |>
+  select(-c(player_id))
+```
+
+``` {r correlation}
+variable_correlation <- cor(data)
+corrplot(variable_correlation)
+```
+``` {r linear model}
+linear_model <- lm(jump_height_flight_time ~ countermovement_depth + peak_power_bm, data = data)
+```
+
+``` {r stepwise}
+# Initialize a model with all predictors
+backward_model <- lm(jump_height_flight_time ~ ., data = data)
+
+# Backward stepwise regression
+stepwise_model <- step(backward_model, direction = "both")
+summary(stepwise_model)
 ```
 
 ## R Markdown
