@@ -1,4 +1,4 @@
-FROM islasgeci/base:1.0.0
+FROM islasgeci/base:22.04
 
 RUN pip install --upgrade pip && pip install \
     black \
